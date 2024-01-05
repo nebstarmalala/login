@@ -57,20 +57,19 @@ button {
 
 .social-login {
   display: flex;
-  justify-content: space-between; /* Align buttons next to each other */
+  justify-content: space-between;
 }
 
 .social-login button {
 	background-color: #fff;
 	border: 1px solid lightgrey;
-  flex: 1; /* Ensure buttons have equal width */
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px; /* Add space between buttons */
+  margin-right: 10px;
 }
 
-/* Remove margin from the last button to avoid extra spacing */
 .social-login button:last-child {
   margin-right: 0;
 }
