@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartPOS</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+</head>
+<body>
+<div class="container">
+  <div class="left-panel">
+    <h3 style="position: absolute; top: 20px; left: 20px;">SmartPOS</h3>
+    <img src="images/illustration.jpg" alt="Illustration" width="600">
+    <p style="font-weight: bold;">Manage sales, inventory and other transactions</p>
+  </div>
+  <div class="right-panel">
+    <div class="login-form">
+      <h2>Welcome Back!</h2>
+      <p style="color: gray;">Please sign in to continue</p>
+      <form>
+        <input type="text" placeholder="Phone number" required>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="Password" required>
+          <span id="togglePassword" class="eye-icon"><i class="fa-solid fa-eye"></i></span>
+        </div>        
+        <button type="submit">Sign in</button>
+        <br>
+        <center><p style="color: gray;">OR</p></center>
+        <br>
+        <div class="social-login">
+          <button>
+            <img src="images/google-logo.png" width="20" alt="Google" class="social-logo"> Sign up with Google
+          </button>
+          <button>
+            <img src="images/facebook-logo.png" width="20" alt="Facebook" class="social-logo"> Sign up with Facebook
+          </button>
+        </div>
+		  
+        <center><a href="#">Forgot password?</a></center>
+        <center><a href="#" style="color: gray;">Don't have an account? Go to Registration</a></center>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+  
+    togglePassword.addEventListener('click', () => {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      togglePassword.innerHTML = type === 'password' ? '<i class="fa-solid fa-eye-slash"></i>' : '<i class="fa-solid fa-eye"></i>';
+    });
+  });
+</script>
+  
+  
+</body>
+</html>

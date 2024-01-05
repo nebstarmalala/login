@@ -1,0 +1,109 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.left-panel {
+  background-color: #f0f0f0;
+}
+
+.login-form {
+  max-width: 360px;
+  width: 100%;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ffc107;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.social-login {
+  display: flex;
+  justify-content: space-between; /* Align buttons next to each other */
+}
+
+.social-login button {
+	background-color: #fff;
+	border: 1px solid lightgrey;
+  flex: 1; /* Ensure buttons have equal width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; /* Add space between buttons */
+}
+
+/* Remove margin from the last button to avoid extra spacing */
+.social-login button:last-child {
+  margin-right: 0;
+}
+
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input[type="text"] {
+  padding-right: 170px;
+}
+
+.password-wrapper input[type="password"] {
+  padding-right: 170px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
